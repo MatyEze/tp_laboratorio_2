@@ -1,0 +1,13 @@
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\bin\Debug\MiCalculadora.exe
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\bin\Debug\MiCalculadora.pdb
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\obj\Debug\MiCalculadora.exe
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\obj\Debug\MiCalculadora.pdb
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\bin\Debug\Entidades.dll
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\bin\Debug\Entidades.pdb
+C:\Users\Maty\Documents\ESCRITORIO TODO\PORGRAMACION\repositorios\tp_laboratorio_2\TP1Calculadora\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
