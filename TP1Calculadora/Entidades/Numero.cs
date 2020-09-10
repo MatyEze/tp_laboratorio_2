@@ -49,6 +49,9 @@ namespace Entidades
         static private bool EsBinario(string binario)
         {
             bool retorno = true;
+            if (binario == string.Empty)
+                retorno = false;
+
             for (int i = 0; i < binario.Length; i++)
             {
                 if (binario[i] != '0' && binario[i] != '1')
