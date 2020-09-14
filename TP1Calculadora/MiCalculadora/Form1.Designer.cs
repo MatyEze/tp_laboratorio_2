@@ -41,7 +41,8 @@
             // 
             // btnConvToDecimal
             // 
-            this.btnConvToDecimal.Location = new System.Drawing.Point(373, 263);
+            this.btnConvToDecimal.Enabled = false;
+            this.btnConvToDecimal.Location = new System.Drawing.Point(373, 244);
             this.btnConvToDecimal.Name = "btnConvToDecimal";
             this.btnConvToDecimal.Size = new System.Drawing.Size(315, 56);
             this.btnConvToDecimal.TabIndex = 8;
@@ -81,7 +82,8 @@
             // 
             // btnConvToBin
             // 
-            this.btnConvToBin.Location = new System.Drawing.Point(12, 263);
+            this.btnConvToBin.Enabled = false;
+            this.btnConvToBin.Location = new System.Drawing.Point(12, 244);
             this.btnConvToBin.Name = "btnConvToBin";
             this.btnConvToBin.Size = new System.Drawing.Size(315, 56);
             this.btnConvToBin.TabIndex = 7;
@@ -133,12 +135,13 @@
             this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblResultado.Size = new System.Drawing.Size(0, 46);
             this.lblResultado.TabIndex = 9;
+            this.lblResultado.TextChanged += new System.EventHandler(this.lblResultado_TextChanged);
             // 
             // FormCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 371);
+            this.ClientSize = new System.Drawing.Size(700, 310);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.cmbOperadores);
             this.Controls.Add(this.txbNumero2);

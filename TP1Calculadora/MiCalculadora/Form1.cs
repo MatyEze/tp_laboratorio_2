@@ -45,8 +45,11 @@ namespace MiCalculadora
 
         private void btnConvToDecimal_Click(object sender, EventArgs e)
         {
-            this.lblResultado.Text = Numero.BinarioDecimal(this.lblResultado.Text);
-            isBin = false;
+            if (isBin)
+            {
+                this.lblResultado.Text = Numero.BinarioDecimal(this.lblResultado.Text);
+                isBin = false;
+            }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -67,6 +70,20 @@ namespace MiCalculadora
             this.txbNumero2.Text = string.Empty;
             this.cmbOperadores.SelectedIndex = -1;
             this.lblResultado.Text = string.Empty;
+        }
+
+        private void lblResultado_TextChanged(object sender, EventArgs e)
+        {
+            if(this.lblResultado.Text != string.Empty)
+            {
+                this.btnConvToBin.Enabled = true;
+                this.btnConvToDecimal.Enabled = true;
+            }
+            else
+            {
+                this.btnConvToBin.Enabled = false;
+                this.btnConvToDecimal.Enabled = false;
+            }
         }
     }
 }
