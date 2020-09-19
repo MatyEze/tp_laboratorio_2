@@ -57,6 +57,13 @@ namespace MiCalculadora
             this.Close();
         }
 
+        /// <summary>
+        /// metodo statico que recibe dos numeros y un operador en forma de string y realizara la operacion correspondiente entre dos Numeros con el valor pasado
+        /// </summary>
+        /// <param name="numero1"></param>
+        /// <param name="numero2"></param>
+        /// <param name="operador"></param>
+        /// <returns>resultado (double)</returns>
         static private double Operar(string numero1, string numero2, string operador)
         {
             Numero num1 = new Numero(numero1);
@@ -64,6 +71,9 @@ namespace MiCalculadora
             return Calculadora.Operar(num1, num2, operador);
         }
 
+        /// <summary>
+        /// borra los datos de los TextBox, ComboBox y del Label resultado
+        /// </summary>
         private void Limpiar()
         {
             this.txbNumero1.Text = string.Empty;
@@ -72,6 +82,11 @@ namespace MiCalculadora
             this.lblResultado.Text = string.Empty;
         }
 
+        /// <summary>
+        /// verifica que haya un resultado cada vez que se cambia el texto de lblResultado para activar o descativar los botones de conversion
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblResultado_TextChanged(object sender, EventArgs e)
         {
             if(this.lblResultado.Text != string.Empty)
@@ -83,6 +98,19 @@ namespace MiCalculadora
             {
                 this.btnConvToBin.Enabled = false;
                 this.btnConvToDecimal.Enabled = false;
+            }
+        }
+
+        private void FormCalculadora_Load(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro que desea salir?", "SALIR", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
             }
         }
     }
