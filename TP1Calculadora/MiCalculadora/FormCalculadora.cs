@@ -78,7 +78,7 @@ namespace MiCalculadora
         {
             this.txbNumero1.Text = string.Empty;
             this.txbNumero2.Text = string.Empty;
-            this.cmbOperadores.SelectedIndex = -1;
+            this.cmbOperadores.SelectedIndex = 0;
             this.lblResultado.Text = string.Empty;
         }
 
