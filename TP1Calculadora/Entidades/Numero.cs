@@ -27,22 +27,15 @@ namespace Entidades
             this.numero = numero;
         }
 
-        public Numero(string numero)
+        public Numero(string numero) 
         {
-            double num;
-            if (double.TryParse(numero, out num))
-                this.numero = num;
-            else
-                this.numero = 0;
+            this.SetNumero = numero;
         }
 
         private double ValidarNumero(string strNumero)
         {
             double valueReturn;
-            if (!double.TryParse(strNumero, out valueReturn))
-            {
-                valueReturn = 0;
-            }
+            double.TryParse(strNumero, out valueReturn);
             return valueReturn;
         }
 
