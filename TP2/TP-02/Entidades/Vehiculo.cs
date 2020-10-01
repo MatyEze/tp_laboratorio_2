@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,7 +38,7 @@ namespace Entidades
         /// <summary>
         /// ReadOnly: Retornará el tamaño
         /// </summary>
-        public abstract ETamanio Tamanio { get;}
+        public abstract ETamanio Tamanio { get; }
 
         /// <summary>
         /// Publica todos los datos del Vehiculo.
@@ -45,10 +46,22 @@ namespace Entidades
         /// <returns></returns>
         public virtual string Mostrar()
         {
-            return this.ToString();
+            return (string)this;
         }
 
-        public override string ToString()
+        static public explicit operator string(Vehiculo p)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine($"CHASIS: {p.chasis}");
+            sb.AppendLine($"MARCA : {p.marca.ToString()}");
+            sb.AppendLine($"COLOR : {p.color.ToString()}");
+            sb.AppendLine("---------------------");
+
+            return sb.ToString();
+        }
+
+        /*public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
 
@@ -58,7 +71,7 @@ namespace Entidades
             sb.AppendLine("---------------------");
 
             return sb.ToString();
-        }
+        }*/
 
         /// <summary>
         /// Dos vehiculos son iguales si comparten el mismo chasis
